@@ -1,0 +1,14 @@
+apiVersion:v1
+kind: Pod
+metadata:
+  name: annotations
+  labels:
+  env: dev
+  project: raboshop
+annotations:
+  imageregistry: "https://hub.docker.com/"
+  jenkinsURL: "https://jenkins.joindevops.com"
+spec:
+  containers:
+  - name: nginx
+    image: nginx
