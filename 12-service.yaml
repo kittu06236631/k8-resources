@@ -1,0 +1,14 @@
+apiVersion: 1v
+kind: service
+matadata:
+  name: nginx
+spec:
+  selector:
+    # labels are used as selectors
+    project: roboshop
+    component: frontend
+    envirnoment: dev
+  ports:
+  - protocol: tcp
+    port: 80 # service port
+    targetPort: 80 # container

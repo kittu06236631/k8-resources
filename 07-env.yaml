@@ -1,0 +1,14 @@
+apiVesion: v1
+kind: Pod
+metadata:
+  name: env-demo
+
+spec:
+  containers:
+  - name: nginx
+    inamge: nginx
+    env:
+    - name: proect
+      value: roboshop
+    - name: course
+      value: kubernetes
