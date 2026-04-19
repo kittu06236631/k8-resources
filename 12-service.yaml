@@ -1,4 +1,4 @@
-apiVersion: 1v
+apiVersion: v1
 kind: service
 matadata:
   name: nginx
